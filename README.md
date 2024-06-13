@@ -14,28 +14,28 @@ This project demonstrates the calculation of area and perimeter for different ge
 
 ### 1. Rectangle
 
-- **Area**: \( \text{Area} = \text{Length} \times \text{Width} \)
-- **Perimeter**: \( \text{Perimeter} = 2 \times (\text{Length} + \text{Width}) \)
+- Area: \( \text{Area} = \text{Length} \times \text{Width} \)
+- Perimeter: \( \text{Perimeter} = 2 \times (\text{Length} + \text{Width}) \)
 
 ### 2. Circle
 
-- **Area**: \( \text{Area} = \pi \times \text{Radius}^2 \)
-- **Perimeter (Circumference)**: \( \text{Perimeter} = 2 \times \pi \times \text{Radius} \)
+- Area: \( \text{Area} = \pi \times \text{Radius}^2 \)
+- Perimeter (Circumference): \( \text{Perimeter} = 2 \times \pi \times \text{Radius} \)
 
 ### 3. Square
 
-- **Area**: \( \text{Area} = \text{Side} \times \text{Side} \)
-- **Perimeter**: \( \text{Perimeter} = 4 \times \text{Side} \)
+- Area: \( \text{Area} = \text{Side} \times \text{Side} \)
+- Perimeter: \( \text{Perimeter} = 4 \times \text{Side} \)
 
 ### 4. Triangle
 
-- **Area**: \( \text{Area} = 0.5 \times \text{Base} \times \text{Height} \)
-- **Perimeter**: \( \text{Perimeter} = \text{Base} + \text{SideA} + \text{SideB} \)
+- Area: \( \text{Area} = 0.5 \times \text{Base} \times \text{Height} \)
+- Perimeter: \( \text{Perimeter} = \text{Base} + \text{SideA} + \text{SideB} \)
 
 ### 5. Trapezoid
 
-- **Area**: \( \text{Area} = 0.5 \times (\text{Base1} + \text{Base2}) \times \text{Height} \)
-- **Perimeter**: \( \text{Perimeter} = \text{Base1} + \text{Base2} + \text{SideA} + \text{SideB} \)
+- Area: \( \text{Area} = 0.5 \times (\text{Base1} + \text{Base2}) \times \text{Height} \)
+- Perimeter: \( \text{Perimeter} = \text{Base1} + \text{Base2} + \text{SideA} + \text{SideB} \)
 
 ## Usage
 

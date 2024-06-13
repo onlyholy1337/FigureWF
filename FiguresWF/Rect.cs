@@ -1,15 +1,9 @@
 ﻿namespace FiguresWF
 {
-	///прямоугольник++
-    internal class Rect : Figure
+    public class Rect : Figure
     {
         public double Length { get; set; }
         public double Width { get; set; }
-
-        public Rect()
-        {
-            Length = Width = 0;
-        }
 
         public Rect(double length, double width)
         {
@@ -17,14 +11,22 @@
             Width = width;
         }
 
-        public override double Square()
+        public override double GetArea()
         {
             return Length * Width;
         }
 
+        public override double Perimetr
+        {
+            get
+            {
+                return 2 * (Length + Width);
+            }
+        }
+
         public override string ToString()
         {
-            return string.Format("Прямоугольник (ДхШ = {0}x{1})", Length, Width);
+            return $"Rectangle with length {Length} and width {Width}";
         }
     }
 }

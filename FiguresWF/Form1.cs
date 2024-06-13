@@ -8,18 +8,38 @@ namespace FiguresWF
         public Form1()
         {
             InitializeComponent();
+            // Добавление опций фигур в combobox
+            figure_comboBox.Items.Add("Прямоугольник");
+            figure_comboBox.Items.Add("Окружность");
+            figure_comboBox.Items.Add("Квадрат");
         }
 
         private void square_button_Click(object sender, EventArgs e)
         {
-            Figure fig = null;
-            switch (figure_comboBox.SelectedIndex)
+            double area = 0;
+            double perimeter = 0;
+            switch (figure_comboBox.SelectedItem.ToString())
             {
-                case 0: // прямоугольник
-                    fig = new Rect((double)size1_numericUpDown.Value, (double)size2_numericUpDown.Value);
+                case "Прямоугольник":
+                    double length = (double)size1_numericUpDown.Value;
+                    double width = (double)size2_numericUpDown.Value;
+                    area = length * width;
+                    perimeter = 2 * (length + width);
+                    break;
+                case "Окружность":
+                    double radius = (double)size1_numericUpDown.Value;
+                    Circle circle = new Circle(radius);
+                    area = circle.GetArea();
+                    perimeter = circle.Perimetr;
+                    break;
+                case "Квадрат":
+                    double side = (double)size1_numericUpDown.Value;
+                    Square square = new Square(side);
+                    area = square.GetArea();
+                    perimeter = square.Perimetr;
                     break;
             }
-            protocol_listBox.Items.Add(fig.ToString() + ": S=" + fig.Square());
+            MessageBox.Show($"Площадь: {area}\nПериметр: {perimeter}");
         }
     }
 }

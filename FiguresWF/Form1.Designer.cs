@@ -2,15 +2,8 @@
 {
     partial class Form1
     {
-        /// <summary>
-        /// Обязательная переменная конструктора.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        /// Освободить все используемые ресурсы.
-        /// </summary>
-        /// <param name="disposing">истинно, если управляемый ресурс должен быть удален; иначе ложно.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,21 +13,15 @@
             base.Dispose(disposing);
         }
 
-        #region Код, автоматически созданный конструктором форм Windows
-
-        /// <summary>
-        /// Требуемый метод для поддержки конструктора — не изменяйте 
-        /// содержимое этого метода с помощью редактора кода.
-        /// </summary>
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.figure_comboBox = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.size1_numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.label3 = new System.Windows.Forms.Label();
             this.size2_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.size1_numericUpDown = new System.Windows.Forms.NumericUpDown();
+            this.figure_comboBox = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.square_button = new System.Windows.Forms.Button();
             this.protocol_listBox = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -72,7 +59,10 @@
             this.figure_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.figure_comboBox.FormattingEnabled = true;
             this.figure_comboBox.Items.AddRange(new object[] {
-            "Прямоугольник"});
+        "Прямоугольник",
+        "Окружность",
+        "Квадрат"
+    });
             this.figure_comboBox.Location = new System.Drawing.Point(71, 27);
             this.figure_comboBox.Name = "figure_comboBox";
             this.figure_comboBox.Size = new System.Drawing.Size(121, 21);
@@ -156,10 +146,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.size2_numericUpDown)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
-
         }
 
-        #endregion
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -173,4 +161,3 @@
         private System.Windows.Forms.GroupBox groupBox2;
     }
 }
-

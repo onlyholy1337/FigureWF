@@ -12,6 +12,8 @@ namespace FiguresWF
             figure_comboBox.Items.Add("Прямоугольник");
             figure_comboBox.Items.Add("Окружность");
             figure_comboBox.Items.Add("Квадрат");
+            figure_comboBox.Items.Add("Треугольник");
+            figure_comboBox.Items.Add("Трапеция");
         }
 
         private void square_button_Click(object sender, EventArgs e)
@@ -23,8 +25,9 @@ namespace FiguresWF
                 case "Прямоугольник":
                     double length = (double)size1_numericUpDown.Value;
                     double width = (double)size2_numericUpDown.Value;
-                    area = length * width;
-                    perimeter = 2 * (length + width);
+                    Rect rectangle = new Rect(length, width);
+                    area = rectangle.GetArea();
+                    perimeter = rectangle.Perimetr;
                     break;
                 case "Окружность":
                     double radius = (double)size1_numericUpDown.Value;
@@ -37,6 +40,25 @@ namespace FiguresWF
                     Square square = new Square(side);
                     area = square.GetArea();
                     perimeter = square.Perimetr;
+                    break;
+                case "Треугольник":
+                    double baseLength = (double)size1_numericUpDown.Value;
+                    double height = (double)size2_numericUpDown.Value;
+                    double sideA = baseLength; // Assuming an equilateral triangle for simplicity
+                    double sideB = baseLength; // Assuming an equilateral triangle for simplicity
+                    Triangle triangle = new Triangle(baseLength, height, sideA, sideB);
+                    area = triangle.GetArea();
+                    perimeter = triangle.Perimetr;
+                    break;
+                case "Трапеция":
+                    double base1 = (double)size1_numericUpDown.Value;
+                    double base2 = (double)size2_numericUpDown.Value;
+                    double heightTrap = (double)size1_numericUpDown.Value;
+                    double sideATrap = (double)size2_numericUpDown.Value;
+                    double sideBTrap = (double)size1_numericUpDown.Value;
+                    Trapezoid trapezoid = new Trapezoid(base1, base2, heightTrap, sideATrap, sideBTrap);
+                    area = trapezoid.GetArea();
+                    perimeter = trapezoid.Perimetr;
                     break;
             }
             MessageBox.Show($"Площадь: {area}\nПериметр: {perimeter}");

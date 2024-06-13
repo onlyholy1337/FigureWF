@@ -61,7 +61,9 @@
             this.figure_comboBox.Items.AddRange(new object[] {
         "Прямоугольник",
         "Окружность",
-        "Квадрат"
+        "Квадрат",
+        "Треугольник",
+        "Трапеция"
     });
             this.figure_comboBox.Location = new System.Drawing.Point(71, 27);
             this.figure_comboBox.Name = "figure_comboBox";
@@ -147,6 +149,7 @@
             this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
         }
+
 
 
         private System.Windows.Forms.Label label1;

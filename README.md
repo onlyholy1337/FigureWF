@@ -1,52 +1,44 @@
 # FiguresWF
 
-This project demonstrates the calculation of area and perimeter for different geometric figures using Windows Forms.
+Этот проект демонстрирует расчет площади и периметра для различных геометрических фигур с использованием Windows Forms.
 
-## Supported Figures
+## Поддерживаемые фигуры
 
-1. Rectangle
-2. Circle
-3. Square
-4. Triangle
-5. Trapezoid
+1. Прямоугольник
+2. Окружность
+3. Квадрат
+4. Треугольник
+5. Трапеция
 
-## Formulas
+## Формулы
 
-### 1. Rectangle
+### 1. Прямоугольник
 
-- Area: \( \text{Area} = \text{Length} \times \text{Width} \)
-- Perimeter: \( \text{Perimeter} = 2 \times (\text{Length} + \text{Width}) \)
+- Площадь: Площадь = Длина × Ширина
+- Периметр: Периметр = 2 × (Длина + Ширина)
 
-### 2. Circle
+### 2. Окружность
 
-- Area: \( \text{Area} = \pi \times \text{Radius}^2 \)
-- Perimeter (Circumference): \( \text{Perimeter} = 2 \times \pi \times \text{Radius} \)
+- Площадь: Площадь = π × Радиус²
+- Периметр (Длина окружности): Периметр = 2 × π × Радиус
 
-### 3. Square
+### 3. Квадрат
 
-- Area: \( \text{Area} = \text{Side} \times \text{Side} \)
-- Perimeter: \( \text{Perimeter} = 4 \times \text{Side} \)
+- Площадь: Площадь = Сторона × Сторона
+- Периметр: Периметр = 4 × Сторона
 
-### 4. Triangle
+### 4. Треугольник
 
-- Area: \( \text{Area} = 0.5 \times \text{Base} \times \text{Height} \)
-- Perimeter: \( \text{Perimeter} = \text{Base} + \text{SideA} + \text{SideB} \)
+- Площадь: Площадь = 0.5 × Основание × Высота
+- Периметр: Периметр = Основание + СторонаA + СторонаB
 
-### 5. Trapezoid
+### 5. Трапеция
 
-- Area: \( \text{Area} = 0.5 \times (\text{Base1} + \text{Base2}) \times \text{Height} \)
-- Perimeter: \( \text{Perimeter} = \text{Base1} + \text{Base2} + \text{SideA} + \text{SideB} \)
+- Площадь: Площадь = 0.5 × (Основание1 + Основание2) × Высота
+- Периметр: Периметр = Основание1 + Основание2 + СторонаA + СторонаB
 
-## Usage
+## Использование
 
-1. Select a figure from the dropdown menu.
-2. Enter the required dimensions.
-3. Click the "Calculate Area" button to get the area and perimeter of the selected figure.
-
-## Screenshots
-
-(Add screenshots of your application here)
-
-## License
-
-(Add your license information here)
+1. Выберите фигуру из выпадающего меню.
+2. Введите необходимые размеры.
+3. Нажмите кнопку "Рассчитать площадь", чтобы получить площадь и периметр выбранной фигуры.
